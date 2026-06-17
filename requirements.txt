@@ -1,0 +1,8 @@
+numpy>=1.21.0
+matplotlib>=3.4.0
+pandas>=1.3.0
+seaborn>=0.11.0
+mpl_toolkits
+rcmaxsat>=1.0.0
+# أو bديل clingo
+# clingo>=5.5.0

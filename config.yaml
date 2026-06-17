@@ -1,0 +1,103 @@
+# Universal SAT/CNF Framework Configuration
+
+# =============================================================================
+# SOLVER SETTINGS
+# =============================================================================
+solver:
+  # MaxSAT solver engine to use (options: rc2, fm, linear)
+  engine: "rc2"
+  
+  # Time limit for solving in seconds (0 = no limit)
+  time_limit: 300
+  
+  # Memory limit in MB (0 = no limit)
+  memory_limit: 4096
+  
+  # Enable verbose output during solving
+  verbose: true
+  
+  # Number of parallel threads (0 = auto-detect)
+  threads: 0
+
+# =============================================================================
+# OPTIMIZATION SETTINGS
+# =============================================================================
+optimization:
+  # Strategy for handling large problems (options: standard, hierarchical, incremental)
+  strategy: "standard"
+  
+  # Enable clause minimization
+  minimize_clauses: true
+  
+  # Enable variable elimination preprocessing
+  preprocess: true
+  
+  # Core extraction method (options: basic, unsat-core, core-boosted)
+  core_extraction: "unsat-core"
+
+# =============================================================================
+# VISUALIZATION SETTINGS
+# =============================================================================
+visualization:
+  # Default plot style (options: seaborn, ggplot, classic)
+  style: "seaborn"
+  
+  # Enable 3D interactive plots
+  interactive_3d: true
+  
+  # Animation frame delay in milliseconds
+  animation_fps: 30
+  
+  # Output format for plots (options: png, svg, pdf, html)
+  output_format: "png"
+  
+  # DPI for static images
+  dpi: 300
+
+# =============================================================================
+# LOGGING SETTINGS
+# =============================================================================
+logging:
+  # Log level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+  level: "INFO"
+  
+  # Log file path (empty string = disable file logging)
+  file_path: "logs/framework.log"
+  
+  # Enable console logging
+  console: true
+  
+  # Log format
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# =============================================================================
+# CACHE SETTINGS
+# =============================================================================
+cache:
+  # Enable result caching
+  enabled: true
+  
+  # Cache directory
+  directory: ".cache"
+  
+  # Maximum cache size in MB
+  max_size: 512
+  
+  # Cache expiration time in hours (0 = never expire)
+  expiration: 24
+
+# =============================================================================
+# SECURITY SETTINGS
+# =============================================================================
+security:
+  # Enable input validation
+  validate_input: true
+  
+  # Maximum problem size (number of variables)
+  max_variables: 100000
+  
+  # Maximum number of clauses
+  max_clauses: 1000000
+  
+  # Sanitize file paths
+  sanitize_paths: true

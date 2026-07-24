@@ -220,7 +220,7 @@ See the [LICENSE](LICENSE) file for the complete legal text.
 For questions, suggestions, collaboration proposals, and **commercial licensing**:
 
 - Open an issue on GitHub
-- Contact via email: **[INSERT YOUR CONTACT EMAIL HERE]**
+- 
 
 **Corporate Inquiries:** All companies must contact us directly before any usage, evaluation, or testing of this software.
 
